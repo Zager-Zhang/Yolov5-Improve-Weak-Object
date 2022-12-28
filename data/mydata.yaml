@@ -1,0 +1,10 @@
+
+train: mydata/images/train
+val: mydata/images/val
+test:  mydata/images/test
+
+# Classes
+names:
+  0: instruction
+  1: prohibition
+  2: warning
