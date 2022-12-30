@@ -434,8 +434,8 @@ def train(hyp, opt, device, callbacks):  # hyp is path/to/hyp.yaml or hyp dictio
 
 def parse_opt(known=False):
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', type=str, default=ROOT / 'yolov5s.pt', help='initial weights path') # 设置要训练的参数的初值（一般设置为空）预训练模型
-    parser.add_argument('--cfg', type=str, default='models/yolov5_C3_Attention+.yaml', help='model.yaml path')  # 对应的网络模型 yolov5s.yaml
+    parser.add_argument('--weights', type=str, default=ROOT / 'yolov5s.pt', help='initial weights path')    # 设置要训练的参数的初值（一般设置为空）预训练模型
+    parser.add_argument('--cfg', type=str, default='models/yolov5_improve.yaml', help='model.yaml path')    # 对应的网络模型 yolov5s.yaml
     parser.add_argument('--data', type=str, default=ROOT / 'data/mydata.yaml', help='dataset.yaml path')
     parser.add_argument('--hyp', type=str, default=ROOT / 'data/hyps/hyp.scratch-low.yaml', help='hyperparameters path') # 超参数
     parser.add_argument('--epochs', type=int, default=80, help='total training epochs')
